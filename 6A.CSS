@@ -12,32 +12,73 @@ body {
 
 nav {
     display: flex;
-    position: sticky;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 10px 15px;
     font-size: 14px;
-    background: #080168;
-    color: white;
-   
-}
-
-.judul {
+    background: #040b7a;
+    color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
     left: 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    position: sticky;
+.menu {
+  width: max-content;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.menu p {
+  background-color: white;
+  color: black;
+  display: flex;
+  width: auto;
+  padding: 5px;
+  font-size: 15px;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.menu p span {
+  transform: rotate(90deg);
+  font-family: monospace;
+}
+
+ul {
+  position: absolute;
+  width: 130px;
+  background-color: rgba(66, 136, 249, 0.7);
+  list-style: none;
+  text-align: left;
+  transition: all .3s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 5px;
+  align-items: end;
+}
+
+li a {
+  display: flex;
+  color: black;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.menu p:hover ~ ul, ul:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+a:hover {
+    background-color: linear-gradient(135deg, #3024d6, #00bcd4);
+    color: rgb(255, 255, 255);
 }
 
 .hero {
