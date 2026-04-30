@@ -92,7 +92,13 @@ a:hover {
     text-align: center;
 }
 
-
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
 
 /*ponsel*/
 @media (max-width: 600px) {
